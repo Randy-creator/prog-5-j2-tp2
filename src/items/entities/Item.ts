@@ -1,4 +1,4 @@
-import { Client } from '../Client/Client';
+import { Client } from '../../clients/entities/Client';
 
 export abstract class Item {
   constructor(

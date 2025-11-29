@@ -1,5 +1,5 @@
-import { Item } from '../Item/Item';
-import { Renting } from '../Renting';
+import { Renting } from 'src/renting/entities/Renting';
+import { Item } from '../../items/entities/Item';
 import { Client } from './Client';
 
 export class Association extends Client implements Renting {
