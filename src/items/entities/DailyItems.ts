@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { Item } from './Item';
 
 export class DailyItems extends Item {

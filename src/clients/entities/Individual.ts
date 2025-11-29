@@ -1,4 +1,4 @@
-import { Client } from './entities/Client';
+import { Client } from './Client';
 
 export class Individual extends Client {
   constructor(
