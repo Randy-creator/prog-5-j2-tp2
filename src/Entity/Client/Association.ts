@@ -4,11 +4,12 @@ import { Client } from './Client';
 
 export class Association extends Client implements Renting {
   constructor(
+    public id: number,
     name: string,
     rentalBudget: number,
     private representativeContact: string,
   ) {
-    super(name, rentalBudget);
+    super(id, name, rentalBudget);
   }
   rent(item: Item): Item {
     if (!item.itemAvailability) {

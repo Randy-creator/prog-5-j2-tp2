@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "itemName": "Hammer",
+    "rentPrice": 5,
+    "itemAvailability": true,
+    "renter": null
+  },
+  {
+    "id": 2,
+    "itemName": "Car",
+    "rentPrice": 100,
+    "itemAvailability": true,
+    "renter": null
+  }
+]
