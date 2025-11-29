@@ -29,7 +29,21 @@ export default tseslint.config(
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-floating-promises': 'warn',
       '@typescript-eslint/no-unsafe-argument': 'warn',
-      "prettier/prettier": ["error", { endOfLine: "auto" }],
+      'prettier/prettier': ['error', { endOfLine: 'auto' }],
+
+      '@typescript-eslint/naming-convention': [
+        'error',
+        { selector: 'class', format: ['PascalCase'] },
+        { selector: 'interface', format: ['PascalCase'] },
+        { selector: 'method', format: ['camelCase'] },
+        {
+          selector: 'variable',
+          format: ['camelCase'],
+          leadingUnderscore: 'allow',
+        },
+        { selector: 'memberLike', format: ['camelCase'] },
+        { selector: 'variable', modifiers: ['const'], format: ['camelCase'] },
+      ],
     },
   },
 );
