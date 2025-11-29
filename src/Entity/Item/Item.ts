@@ -1,10 +1,12 @@
 import { Client } from '../Client/Client';
 
-export interface Item {
-  renter: Client | null;
-  itemName: string;
-  rentPrice: number;
-  itemAvailability: boolean;
+export abstract class Item {
+  constructor(
+    public renter: Client | null,
+    public itemName: string,
+    public rentPrice: number,
+    public itemAvailability: boolean,
+  ) {}
 
-  getMinRentDays(): number;
+  abstract getMinRentDays(item: Item): number;
 }

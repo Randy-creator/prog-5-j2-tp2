@@ -1,18 +1,15 @@
-import { Client } from '../Client/Client';
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { Item } from './Item';
 
-export class DailyItems implements Item {
-  renter: Client | null;
-  itemAvailability: boolean;
-
+export class DailyItems extends Item {
   constructor(
     public itemName: string,
     public rentPrice: number,
-    available: boolean = false,
+    public itemAvailability: boolean = false,
   ) {
-    this.renter = null;
-    this.itemAvailability = available;
+    super(null, itemName, rentPrice, itemAvailability);
   }
+
   getMinRentDays(): number {
     return 1;
   }

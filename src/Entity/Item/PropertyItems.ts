@@ -1,18 +1,14 @@
-import { Client } from '../Client/Client';
 import { Item } from './Item';
 
-export class PropertyItems implements Item {
-  renter: Client | null;
-  itemAvailability: boolean;
-
+export class PropertyItems extends Item {
   constructor(
     public itemName: string,
     public rentPrice: number,
-    available: boolean = false,
+    public itemAvailability: boolean = false,
   ) {
-    this.renter = null;
-    this.itemAvailability = available;
+    super(null, itemName, rentPrice, itemAvailability);
   }
+
   getMinRentDays(): number {
     return 30;
   }
