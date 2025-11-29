@@ -1,4 +1,4 @@
-import { Client } from './Client';
+import { Client } from '../Client/Client';
 
 export interface Item {
   renter: Client | null;

@@ -1,7 +1,7 @@
-import { Client } from './Client';
+import { Client } from '../Client/Client';
 import { Item } from './Item';
 
-export class PropertyItems implements Item {
+export class DailyItems implements Item {
   renter: Client | null;
   itemAvailability: boolean;
 
@@ -14,6 +14,6 @@ export class PropertyItems implements Item {
     this.itemAvailability = available;
   }
   getMinRentDays(): number {
-    return 30;
+    return 1;
   }
 }
