@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Dupont",
+    "rentalBudget": 150
+  },
+  {
+    "id": 2,
+    "name": "Marc Randrian",
+    "rentalBudget": 300
+  },
+  {
+    "id": 3,
+    "name": "Evelyn",
+    "rentalBudget": 500
+  }
+]

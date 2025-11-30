@@ -14,6 +14,8 @@ export class Association extends Client implements Renting {
   rent(item: Item): Item {
     if (!item.itemAvailability) {
       throw new Error('Item is not available anymore !');
+    } else if (this.rentalBudget < item.rentPrice) {
+      throw new Error('Action failed, insufficient balance !');
     }
 
     item.renter = this;
