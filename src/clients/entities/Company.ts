@@ -2,7 +2,7 @@ import { Renting } from 'src/renting/entities/Renting';
 import { Client } from './Client';
 import { Item } from 'src/items/entities/Item';
 
-export class Enterprise extends Client implements Renting {
+export class Company extends Client implements Renting {
   constructor(
     public id: number,
     name: string,
