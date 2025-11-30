@@ -7,7 +7,11 @@ export abstract class Item {
     public itemName: string,
     public rentPrice: number,
     public itemAvailability: boolean,
-  ) {}
+  ) {
+    if (this.itemAvailability) {
+      this.renter = null;
+    }
+  }
 
   abstract getMinRentDays(): number;
 }

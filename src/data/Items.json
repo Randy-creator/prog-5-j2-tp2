@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "renter": null,
+    "itemName": "Electric Drill",
+    "rentPrice": 15,
+    "itemAvailability": true
+  },
+  {
+    "id": 2,
+    "renter": {
+      "id": 10,
+      "name": "Evelyn",
+      "rentalBudget": 500
+    },
+    "itemName": "Camera",
+    "rentPrice": 40,
+    "itemAvailability": false
+  },
+  {
+    "id": 3,
+    "renter": null,
+    "itemName": "Mountain Bike",
+    "rentPrice": 30,
+    "itemAvailability": true
+  }
+]
