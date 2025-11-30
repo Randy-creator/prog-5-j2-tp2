@@ -7,7 +7,7 @@ export class Association extends Client implements Renting {
     public id: number,
     name: string,
     rentalBudget: number,
-    private representativeContact: string,
+    public representativeContact: string,
   ) {
     super(id, name, rentalBudget);
   }
@@ -19,8 +19,12 @@ export class Association extends Client implements Renting {
     }
 
     item.renter = this;
+    this.rentalBudget -= item.rentPrice;
     item.itemAvailability = false;
 
     return item;
   }
 }
+
+// comment on va differencier le rend pour :
+// une personne, un entreprise et une association
