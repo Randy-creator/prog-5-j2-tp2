@@ -7,4 +7,14 @@ export class ItemsService {
   getAll(): any {
     return this.manager.readAll();
   }
+
+  getById(id: number): any {
+    // // const items = this.manager.readAll();
+    // // const found = items.find((item) => item.id === id);
+    // if (!found) {
+    //   throw new NotFoundException('Item not found !');
+    // }
+    // return found;
+    return id;
+  }
 }
